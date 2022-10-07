@@ -1,0 +1,30 @@
+OPTIONS -indexes
+
+RewriteEngine On
+
+RewriteRule ^login/?$ ./index.php [NC]
+RewriteRule ^painel/?$ ./painel.php [NC]
+
+RewriteRule ^caixa/cadastrar/?$ ./caixa/cadastrar.php [NC]
+RewriteRule ^caixa/painelcaixa/?$ ./caixa/painelcaixa.php [NC]
+
+RewriteRule ^estoque/cadastrar/?$ ./estoque/cadastrar.php [NC]
+RewriteRule ^estoque/painelestoque/?$ ./estoque/painelestoque.php [NC]
+
+RewriteRule ^servicos/cadastrar/?$ ./servicos/cadastrar.php [NC]
+RewriteRule ^servicos/painelservicos/?$ ./servicos/painelservicos.php [NC]
+
+RewriteRule ^vendas/cadastrar/?$ ./vendas/cadastrar.php [NC]
+RewriteRule ^vendas/painelvendas/?$ ./vendas/painelvendas.php [NC]
+
+RewriteRule ^usuarios/?$ ./usuarios/listar.php [NC]
+RewriteRule ^usuarios/cadastrar/?$ ./usuarios/cadastrar.php [NC]
+RewriteRule ^usuarios/editar/([a-z0-9]+)/?$ ./usuarios/editar.php?id=$1 [NC,QSA]
+RewriteRule ^usuarios/alterar-senha/([a-z0-9]+)/?$ ./usuarios/alterar-senha.php?id=$1 [NC,QSA]
+RewriteRule ^usuarios/excluir/([a-z0-9]+)/?$ ./usuarios/excluir.php?id=$1 [NC,QSA]
+
+RewriteRule ^unidades/?$ ./unidades/listar.php [NC]
+RewriteRule ^unidades/cadastrar/?$ ./unidades/cadastrar.php [NC]
+RewriteRule ^unidades/editar/([a-z0-9]+)/?$ ./unidades/editar.php?id=$1 [NC,QSA]
+RewriteRule ^unidades/excluir/([a-z0-9]+)/?$ ./unidades/excluir.php?id=$1 [NC,QSA]
+
